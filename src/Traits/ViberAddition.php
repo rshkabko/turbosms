@@ -67,6 +67,8 @@ trait ViberAddition
     {
         if ($countClicks) {
             $this->countClicks = 1;
+        } else {
+            $this->countClicks = 0;
         }
 
         return $this;
@@ -80,6 +82,8 @@ trait ViberAddition
     {
         if ($isTransactional) {
             $this->isTransactional = 1;
+        } else {
+            $this->isTransactional = 0;
         }
 
         return $this;
